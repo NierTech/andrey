@@ -1,3 +1,3 @@
 # kursovoy
 -
-https://niertech.github.io/kursovoy/Chip-tuning/src/html/index.html
+https://niertech.github.io/andrey/Chip-tuning/src/html/index.html
