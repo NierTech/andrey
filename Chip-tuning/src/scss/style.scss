@@ -1,0 +1,499 @@
+@import './reset/reset.scss';
+@import './color/color.scss';
+@import './fonts/fonts.scss';
+body{
+  background: #0D0E13;
+}
+// Header
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 15px;
+  &__title{
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: white;
+  }
+}
+// Nav menu
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  &__link{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    border-bottom: 1px solid #ff005c;
+    &:hover{
+      color: #ff005c;
+      transition: all .2s ease-in-out;
+    }
+  }
+}
+
+// Group btn
+.group{
+  display: flex;
+  gap: 20px;
+  &__btn--reg{
+    background: #484848;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    &:hover{
+      background-color: #fff;
+      color: black;
+      transition: all 0.3s ease-in-out
+    }
+  }
+  &__btn--sign{
+    background: #484848;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    &:hover{
+      background-color: #fff;
+      color: black;
+      transition: all 0.3s ease-in-out
+    }
+  }
+}
+// Banner car center
+.banner-car{
+  background-image: url('../assets/images/banner-car.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+// Main
+.main{
+  margin-top: 120px;
+  min-height: 800px;
+  color: white;
+}
+.text{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  &__title{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+    background: #ff005c;
+    padding: 8px 24px;
+    border-radius: 15px;
+  }
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 80px;
+  gap: 15px;
+  &__title{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    color: white;
+  }
+  &__paragraph{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #484848;
+  }
+}
+// Grid
+.car{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+}
+.ul{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  &__text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    color: white;
+    background: #ff005c;
+    padding: 4px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover{
+      transition: all .3s ease-in-out;
+      color: black;
+      background: #fff;
+      opacity: 85%;
+      box-shadow: 0px 2px 12px 4px rgba($color: #fff, $alpha: 1.0);
+    }
+  }
+}
+// Styling benefits
+.benefits{
+  margin-top: 160px;
+  &__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title{
+    color: white;
+    font-size: 46px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+  }
+  &__paragraph{
+    color: #484848;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+  }
+}
+// Styling card
+.card{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 70px;
+  &__change{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__title{
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: white;
+    background: #ff005c;
+    padding: 4px 10px;
+    border-radius: 10px;
+  }
+  &__paragraph{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    width: 250px;
+  }
+}
+// Chip tuning description
+.description{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  &__text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__title{
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: white;
+  }
+  &__paragraph{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    width: 700px;
+    color: #484848;
+  }
+}
+.img{
+  box-shadow: 0px 2px 12px 4px rgba($color: #fff, $alpha: 1.0);
+}
+/* Styling footer */
+.footer {
+  padding-top: 25px;
+  padding-bottom: 20px;
+  background: #181a24;
+}
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container__copyright {
+  color: white;
+}
+.container__copyright--name {
+  font-size: 20px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  line-height: 23px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin-top: 20px;
+}
+.list > a {
+  font-size: 16px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 300;
+  margin-top: 10px;
+  color: white;
+}
+.footer__policy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 65px;
+  margin-left: 150px;
+}
+.footer__policy > p {
+  font-size: 20px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+.footer__policy--copyright {
+  font-size: 14px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 300;
+  color: white;
+  width: 230px;
+}
+.footer__markup {
+  width: 400px;
+}
+.footer__markup > p {
+  font-size: 14px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 300;
+  color: white;
+}
+
+
+@media only screen and(max-width: 768px) {
+  // Header Adaptive
+  .header{
+    margin: 10px 30px 0px 30px;
+    &__title{
+      font-size: 24px;
+    }
+  }
+ .group{
+  display: none;
+ }
+//  BURGER MENU
+ .burger{
+  &__button{
+      font-size: 32px;
+      position: relative;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      width: 32px;
+      height: 32px;
+  }
+  &__button::after,
+  &__button::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  &__button::after{
+    transform: translateY(calc(50% + 4px));
+    &::before{
+      transform: translateY(calc(50% + 4px));
+    }
+  }
+}
+nav.is-open .burger__button:after {
+  transform: rotate(45deg);
+}
+
+nav.is-open .burger__button:before {
+  transform: rotate(-45deg);
+}
+nav ul {
+  display: none;
+  transform: scale(1.5);
+  opacity: 0;
+  transition: all ease-out .15s;
+  position: fixed;
+  background-color: black;
+  list-style: none;
+  padding: 10em 0;
+  margin: 0;
+  inset: 0;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+nav.is-active ul {
+  display: flex;
+}
+
+nav.is-open ul {
+  transform: scale(1);
+  opacity: 1;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.75rem;
+}
+  // Main adaptive
+  .text{
+    &__title{
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      text-transform: uppercase;
+      background: #ff005c;
+      padding: 8px 14px;
+    }
+  }
+  .main{
+    min-height: 500px;
+  }
+  .banner-car{
+    display: flex;
+    margin-bottom: 200px;
+  }
+  // Choose mark
+  .ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    &__text{
+      font-size: 14px;
+    }
+  }
+  // Benefits adaptive
+  .benefits{
+    margin-top: 100px;
+    &__title{
+      font-size: 38px;
+    }
+    &__paragraph{
+      font-size: 17px;
+    }
+  }
+  // Styling card
+  .card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+    &__change{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    &__title{
+      font-size: 18px;
+    }
+    &__paragraph{
+      font-size: 14px;
+    }
+  }
+  // Tuning description 
+  .description{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    &__text{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__title{
+      font-size: 30px;
+    }
+    &__paragraph{
+      font-size: 12px;
+      width: 300px;
+    }
+  }
+  .img{
+    display: none;
+  }
+  // Footer adaptive
+  .footer {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+  }
+  .container__row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+  .container__copyright--name {
+    font-size: 14px;
+  }
+  .list {
+    margin-top: 0px;
+  }
+  .list > a {
+    font-size: 12px;
+  }
+  .footer__policy {
+    gap: 10px;
+    margin-left: 0;
+  }
+  .footer__policy > p {
+    font-size: 14px;
+  }
+  .footer__policy--copyright {
+    font-size: 12px;
+  }
+  .footer__markup {
+    width: 300px;
+    line-height: 16.48px;
+  }
+  .footer__markup > p {
+    font-size: 10px;
+  }
+}
+

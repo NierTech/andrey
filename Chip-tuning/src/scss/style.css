@@ -1,0 +1,594 @@
+/* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  /*outline: none;*/
+}
+
+a:focus,
+a:active {
+  /* outline: none;*/
+}
+
+/* Links */
+a, a:link, a:visited {
+  /* color: inherit; */
+  text-decoration: none;
+  /* display: inline-block; */
+}
+
+a:hover {
+  /* color: inherit; */
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  background: #0D0E13;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 15px;
+}
+.header__title {
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+.nav__link {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  border-bottom: 1px solid #ff005c;
+}
+.nav__link:hover {
+  color: #ff005c;
+  transition: all 0.2s ease-in-out;
+}
+
+.group {
+  display: flex;
+  gap: 20px;
+}
+.group__btn--reg {
+  background: #484848;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.group__btn--reg:hover {
+  background-color: #fff;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+.group__btn--sign {
+  background: #484848;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.group__btn--sign:hover {
+  background-color: #fff;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.banner-car {
+  background-image: url("../assets/images/banner-car.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.main {
+  margin-top: 120px;
+  min-height: 800px;
+  color: white;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.text__title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+  background: #ff005c;
+  padding: 8px 24px;
+  border-radius: 15px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 80px;
+  gap: 15px;
+}
+.logo__title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  color: white;
+}
+.logo__paragraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #484848;
+}
+
+.car {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.ul__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  color: white;
+  background: #ff005c;
+  padding: 4px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.ul__text:hover {
+  transition: all 0.3s ease-in-out;
+  color: black;
+  background: #fff;
+  opacity: 85%;
+  box-shadow: 0px 2px 12px 4px white;
+}
+
+.benefits {
+  margin-top: 160px;
+}
+.benefits__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.benefits__title {
+  color: white;
+  font-size: 46px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.benefits__paragraph {
+  color: #484848;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 70px;
+}
+.card__change {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card__title {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: white;
+  background: #ff005c;
+  padding: 4px 10px;
+  border-radius: 10px;
+}
+.card__paragraph {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: white;
+  width: 250px;
+}
+
+.description {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+.description__text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.description__title {
+  font-size: 48px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+.description__paragraph {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  width: 700px;
+  color: #484848;
+}
+
+.img {
+  box-shadow: 0px 2px 12px 4px white;
+}
+
+/* Styling footer */
+.footer {
+  padding-top: 25px;
+  padding-bottom: 20px;
+  background: #181a24;
+}
+
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container__copyright {
+  color: white;
+}
+
+.container__copyright--name {
+  font-size: 20px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin-top: 20px;
+}
+
+.list > a {
+  font-size: 16px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 300;
+  margin-top: 10px;
+  color: white;
+}
+
+.footer__policy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 65px;
+  margin-left: 150px;
+}
+
+.footer__policy > p {
+  font-size: 20px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+.footer__policy--copyright {
+  font-size: 14px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 300;
+  color: white;
+  width: 230px;
+}
+
+.footer__markup {
+  width: 400px;
+}
+
+.footer__markup > p {
+  font-size: 14px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 300;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    margin: 10px 30px 0px 30px;
+  }
+  .header__title {
+    font-size: 24px;
+  }
+  .group {
+    display: none;
+  }
+  .burger__button {
+    font-size: 32px;
+    position: relative;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+  }
+  .burger__button::after, .burger__button::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .burger__button::after {
+    transform: translateY(calc(50% + 4px));
+  }
+  .burger__button::after::before {
+    transform: translateY(calc(50% + 4px));
+  }
+  nav.is-open .burger__button:after {
+    transform: rotate(45deg);
+  }
+  nav.is-open .burger__button:before {
+    transform: rotate(-45deg);
+  }
+  nav ul {
+    display: none;
+    transform: scale(1.5);
+    opacity: 0;
+    transition: all ease-out 0.15s;
+    position: fixed;
+    background-color: black;
+    list-style: none;
+    padding: 10em 0;
+    margin: 0;
+    inset: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  nav.is-active ul {
+    display: flex;
+  }
+  nav.is-open ul {
+    transform: scale(1);
+    opacity: 1;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.75rem;
+  }
+  .text__title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    background: #ff005c;
+    padding: 8px 14px;
+  }
+  .main {
+    min-height: 500px;
+  }
+  .banner-car {
+    display: flex;
+    margin-bottom: 200px;
+  }
+  .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .ul__text {
+    font-size: 14px;
+  }
+  .benefits {
+    margin-top: 100px;
+  }
+  .benefits__title {
+    font-size: 38px;
+  }
+  .benefits__paragraph {
+    font-size: 17px;
+  }
+  .card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  .card__change {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card__title {
+    font-size: 18px;
+  }
+  .card__paragraph {
+    font-size: 14px;
+  }
+  .description {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .description__text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .description__title {
+    font-size: 30px;
+  }
+  .description__paragraph {
+    font-size: 12px;
+    width: 300px;
+  }
+  .img {
+    display: none;
+  }
+  .footer {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+  }
+  .container__row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+  .container__copyright--name {
+    font-size: 14px;
+  }
+  .list {
+    margin-top: 0px;
+  }
+  .list > a {
+    font-size: 12px;
+  }
+  .footer__policy {
+    gap: 10px;
+    margin-left: 0;
+  }
+  .footer__policy > p {
+    font-size: 14px;
+  }
+  .footer__policy--copyright {
+    font-size: 12px;
+  }
+  .footer__markup {
+    width: 300px;
+    line-height: 16.48px;
+  }
+  .footer__markup > p {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
